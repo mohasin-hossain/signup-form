@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+:root {
+  --background-color: #151630;
+  --text-color-main: #ffffff;
+  --text-color-alt: rgba(255, 255, 255, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+  background-color: var(--background-color);
+}
+
+.form {
+  background-image: linear-gradient(#1391ff, #0145ff);
+  width: 400px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  padding: 120px 50px;
+  box-shadow: 2px 2px 8px #000000ad;
+}
+
+.img-overlay::before {
+  content: "";
+  background-image: url("https://cdn.pixabay.com/photo/2017/09/06/13/18/mosaic-2721424_960_720.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.22;
+  width: 400px;
+  height: 600px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  z-index: -1;
+}
+
+.icon {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  color: var(--text-color-alt);
+  cursor: pointer;
+}
+
+.form h1 {
+  color: var(--text-color-main);
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--text-color-main);
+  margin-bottom: 1.5rem;
+  font-size: 0.7rem;
+  border-bottom: 1px solid rgba(231, 231, 231, 0.8);
+}
+
+#email,
+#email::placeholder,
+#password,
+#password::placeholder,
+#confirmpassword,
+#confirmpassword::placeholder {
+  width: 100%;
+  outline: none;
+  border: none;
+  background: none;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  padding-bottom: 0.5rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.inputs:hover {
+    border-bottom: 3px solid #fff;
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+}
+
+.button {
+    width: 100%;
+    background: var(--text-color-main);
+    border: none;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    padding: 14px;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #0145ff;
+    outline: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    border: 2px solid #fff;
+    color: white;
+    background: transparent;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+p {
+    color: var(--text-color-alt);
+    font-size: 0.8rem;
+}
